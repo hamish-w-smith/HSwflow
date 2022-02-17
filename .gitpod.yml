@@ -1,7 +1,7 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: julia Pkg.add("Wflow",io=io) | julia Pkg.add("Revise",io=io) |
+  - init: julia import Pkg | julia Pkg.add(["Wflow", "Revise"]) |
       echo '🧡'
 
 vscode:
